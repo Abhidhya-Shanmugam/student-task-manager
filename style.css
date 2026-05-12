@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff00cc,
+        #3333ff,
+        #00ffee
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+
+    width: 400px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 30px;
+}
+
+.input-section {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+input {
+
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+button {
+
+    padding: 14px 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        45deg,
+        #ff00cc,
+        #3333ff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow: 0 0 15px #ffffff;
+}
+
+ul {
+
+    margin-top: 25px;
+}
+
+li {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: white;
+
+    padding: 14px;
+
+    margin-top: 12px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+li:hover {
+
+    transform: translateX(5px);
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.task-text {
+
+    cursor: pointer;
+}
+
+.completed {
+
+    text-decoration: line-through;
+
+    opacity: 0.6;
+}
+
+.delete-btn {
+
+    background: red;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+}
